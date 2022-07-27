@@ -1,0 +1,43 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.form-container .form-container-header {
+  padding: 10px 0 20px 0;
+  display: flex;
+  align-items: center; }
+  .form-container .form-container-header .form-container-header-title {
+    flex: 1;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.8); }
+
+.form-container .form-actions-container {
+  display: flex;
+  justify-content: flex-end; }
+
+.form-container .form-fields-container {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .form-container .form-fields-container .form-fields-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ff9937;
+    padding: 5px 0; }
+  .form-container .form-fields-container .form-fields {
+    margin: 0 0 20px 0;
+    width: 45%; }

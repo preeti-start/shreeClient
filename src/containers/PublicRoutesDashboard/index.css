@@ -1,0 +1,9 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.public-dashboard-container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; }

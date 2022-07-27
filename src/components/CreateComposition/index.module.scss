@@ -1,0 +1,98 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    padding: 0 0 40px 0;
+    display: flex;
+    @include fontStyle($BLACK_SHADE_80, $size_35, bold);
+    .title {
+      flex: 1;
+    }
+  }
+  .body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+
+    .title-section {
+      width: 100px;
+      margin: 0 50px 0 0;
+
+      .title-container {
+        @include fontStyle($BLACK_SHADE_80, $size_16, bold);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        margin: 0 0 20px 0;
+
+        &.selected {
+          background-color: $RED;
+          color: $WHITE
+        }
+      }
+    }
+    .details-section {
+      @include fontStyle($BLACK_SHADE_60, $size_16, bold);
+      display: flex;
+      flex-direction: column;
+    }
+    .edit-section-container {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+
+      .edit-section {
+        width: 500px;
+        height: 600px;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        .data {
+          position: absolute;
+        }
+      }
+    }
+
+    .data-section {
+      display: flex;
+      flex-wrap: wrap;
+      width: 350px;
+      overflow: auto;
+
+      .data-container {
+        width: 150px;
+        height: 200px;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px 20px 0;
+        @include fontStyle($BLACK_SHADE_80, $size_16, bold);
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        padding: 20px;
+        border-radius: 4px;
+
+        .data-img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 10px;
+        }
+        &.selected {
+          border-color: $RED;
+        }
+      }
+    }
+  }
+}

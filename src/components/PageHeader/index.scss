@@ -1,0 +1,24 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.page-header-container {
+  padding: 20px 0;
+
+  .bottom_row {
+    display: flex;
+    padding: 10px 0 0 0;
+  }
+
+  .top_row {
+    display: flex;
+
+    .right-section {
+      display: flex;
+    }
+    .page-header-title {
+      flex: 1;
+      @include fontStyle($BLACK_SHADE_80, $size_25, bold);
+    }
+  }
+
+}

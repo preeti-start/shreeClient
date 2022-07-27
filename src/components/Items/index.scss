@@ -1,0 +1,6 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.del-item-popup-text {
+  @include fontStyle($PRIMARY, $size_18, bold);
+}

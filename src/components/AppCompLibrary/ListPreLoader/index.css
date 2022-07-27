@@ -1,0 +1,18 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.pre-loader-loading-comp {
+  margin-bottom: 8px;
+  background-color: #375777;
+  opacity: 0.06;
+  width: 100px;
+  height: 16px;
+  border-radius: 2px; }
+  .pre-loader-loading-comp.pre-loader-loading-comp-small {
+    width: 50px; }
+  .pre-loader-loading-comp.pre-loader-loading-comp-large {
+    width: 150px; }
+
+.housekeeping-preloaders {
+  width: 91%; }

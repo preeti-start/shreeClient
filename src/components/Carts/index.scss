@@ -1,0 +1,31 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.cart-list-container {
+  height: 100%;
+  .no-result-found-container {
+    .no-result-found-image {
+      height: 200px;
+    }
+  }
+  .tab-container {
+    display: flex;
+    margin: 20px 0;
+
+    .tab-data {
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 10px 0 0;
+      padding: 10px 20px;
+      display: flex;
+      border: solid 1px $BLACK_SHADE_60;
+      @include fontStyle($BLACK_SHADE_80, $size_14, bold);
+
+      &.active {
+        background-color: $PRIMARY;
+        border-color: $PRIMARY;
+        color: $WHITE
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+$filterFont: $size_14;
+
+.shop-filters-header {
+  @include fontStyle($BLACK_SHADE_80, $size_20, bold);
+  //margin: 20px 0 0 0;
+  &.margin_top {
+    margin: 10px 0 0 0;
+  }
+}
+
+.filter-left-section {
+  padding: 0 0 0 30px;
+  width: 250px;
+  min-width: 250px;
+  .checkbox-container {
+    .checkbox-label {
+      font-size: $filterFont;
+    }
+  }
+}
+
+.shop-list-sort-option {
+
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  margin: 10px 10px 0 0;
+  @include fontStyle($BLACK_SHADE_60, $filterFont, normal);
+
+  .shop-list-filter-title {
+    margin: 5px 0;
+    @include fontStyle($BLACK_SHADE_60, $filterFont, bold);
+  }
+
+  .shop-list-search-icon {
+    width: 27px;
+    opacity: 0.5;
+    height: 27px;
+    position: absolute;
+    z-index: 1000;
+    left: 170px;
+    top: 50%;
+  }
+
+  &.sort-active {
+    color: $RED
+  }
+}

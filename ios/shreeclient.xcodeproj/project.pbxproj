@@ -14,6 +14,16 @@
 		96905EF65AED1B983A6B3ABC /* libPods-shreeclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-shreeclient.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		3DB9516AB6154618A154FC59 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BF45444F3CD4FBFAD900DEA /* IndieFlower.ttf */; };
+		6A1A1F62061A4B25BB5E9AB0 /* Merienda-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23F1AB090B394D4EB9707A95 /* Merienda-Bold.ttf */; };
+		CB252541FE5F40BCADDA17ED /* Merienda-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDFCCFC1C3349B3BE221B4C /* Merienda-Regular.ttf */; };
+		A5259FEB5E384061973740CE /* MeriendaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 853D179A24EC41248BBE55BA /* MeriendaOne-Regular.ttf */; };
+		841B3D9D69084982A0CF3AB7 /* MetalMania-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7910E78E97D47978D41D51D /* MetalMania-Regular.ttf */; };
+		03202B45027C48139123E2A9 /* Niconne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1FA3F4F05984054BE437E4D /* Niconne-Regular.ttf */; };
+		9526FBD5CFB94BA79D9854AD /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47062F6E3B3749CA861B2E75 /* OpenSans-Regular.ttf */; };
+		95895AB9B1954B178A2A3376 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58965C59AD84C33813BBF7F /* PlayfairDisplay-Bold.ttf */; };
+		A6A8039264454DEBB7012B19 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2479B1C9AC4B4199A5C990B2 /* PlayfairDisplay-Regular.ttf */; };
+		2F0A50D57C40499BB17D9F9A /* Stylish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2562EFA6D5C64D1D811BFBF9 /* Stylish-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,16 @@
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shreeclient/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		6BF45444F3CD4FBFAD900DEA /* IndieFlower.ttf */ = {isa = PBXFileReference; name = "IndieFlower.ttf"; path = "../src/mobileAssets/fonts/IndieFlower.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		23F1AB090B394D4EB9707A95 /* Merienda-Bold.ttf */ = {isa = PBXFileReference; name = "Merienda-Bold.ttf"; path = "../src/mobileAssets/fonts/Merienda-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CDFCCFC1C3349B3BE221B4C /* Merienda-Regular.ttf */ = {isa = PBXFileReference; name = "Merienda-Regular.ttf"; path = "../src/mobileAssets/fonts/Merienda-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		853D179A24EC41248BBE55BA /* MeriendaOne-Regular.ttf */ = {isa = PBXFileReference; name = "MeriendaOne-Regular.ttf"; path = "../src/mobileAssets/fonts/MeriendaOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7910E78E97D47978D41D51D /* MetalMania-Regular.ttf */ = {isa = PBXFileReference; name = "MetalMania-Regular.ttf"; path = "../src/mobileAssets/fonts/MetalMania-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1FA3F4F05984054BE437E4D /* Niconne-Regular.ttf */ = {isa = PBXFileReference; name = "Niconne-Regular.ttf"; path = "../src/mobileAssets/fonts/Niconne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47062F6E3B3749CA861B2E75 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../src/mobileAssets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D58965C59AD84C33813BBF7F /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-Bold.ttf"; path = "../src/mobileAssets/fonts/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2479B1C9AC4B4199A5C990B2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-Regular.ttf"; path = "../src/mobileAssets/fonts/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2562EFA6D5C64D1D811BFBF9 /* Stylish-Regular.ttf */ = {isa = PBXFileReference; name = "Stylish-Regular.ttf"; path = "../src/mobileAssets/fonts/Stylish-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +105,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				134A2AD6845542B4BFE00BAD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -132,6 +153,24 @@
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
+		};
+		134A2AD6845542B4BFE00BAD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				6BF45444F3CD4FBFAD900DEA /* IndieFlower.ttf */,
+				23F1AB090B394D4EB9707A95 /* Merienda-Bold.ttf */,
+				8CDFCCFC1C3349B3BE221B4C /* Merienda-Regular.ttf */,
+				853D179A24EC41248BBE55BA /* MeriendaOne-Regular.ttf */,
+				F7910E78E97D47978D41D51D /* MetalMania-Regular.ttf */,
+				C1FA3F4F05984054BE437E4D /* Niconne-Regular.ttf */,
+				47062F6E3B3749CA861B2E75 /* OpenSans-Regular.ttf */,
+				D58965C59AD84C33813BBF7F /* PlayfairDisplay-Bold.ttf */,
+				2479B1C9AC4B4199A5C990B2 /* PlayfairDisplay-Regular.ttf */,
+				2562EFA6D5C64D1D811BFBF9 /* Stylish-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -196,6 +235,16 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				3DB9516AB6154618A154FC59 /* IndieFlower.ttf in Resources */,
+				6A1A1F62061A4B25BB5E9AB0 /* Merienda-Bold.ttf in Resources */,
+				CB252541FE5F40BCADDA17ED /* Merienda-Regular.ttf in Resources */,
+				A5259FEB5E384061973740CE /* MeriendaOne-Regular.ttf in Resources */,
+				841B3D9D69084982A0CF3AB7 /* MetalMania-Regular.ttf in Resources */,
+				03202B45027C48139123E2A9 /* Niconne-Regular.ttf in Resources */,
+				9526FBD5CFB94BA79D9854AD /* OpenSans-Regular.ttf in Resources */,
+				95895AB9B1954B178A2A3376 /* PlayfairDisplay-Bold.ttf in Resources */,
+				A6A8039264454DEBB7012B19 /* PlayfairDisplay-Regular.ttf in Resources */,
+				2F0A50D57C40499BB17D9F9A /* Stylish-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,12 +295,20 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-shreeclient/Pods-shreeclient-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -377,7 +434,8 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,7 +492,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

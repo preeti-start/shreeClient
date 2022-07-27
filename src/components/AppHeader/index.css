@@ -1,0 +1,131 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+header {
+  display: flex;
+  padding: 20px; }
+
+.app-header-cart-container {
+  position: relative; }
+
+.app-header-cart-count {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: #ee2e24;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff; }
+
+.app-header-icons {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s; }
+  .app-header-icons.light-color {
+    fill: #fff; }
+  .app-header-icons:hover {
+    width: 32px;
+    height: 32px; }
+
+.logout-icon {
+  transform: rotate(180deg); }
+
+.app-header-horizontal-seperator {
+  width: 1px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 15px; }
+
+.app-header-profile-img-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.app-header-menu-container {
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: flex-end; }
+  .app-header-menu-container .button-container {
+    margin: 0 30px 10px 0; }
+  .app-header-menu-container .app-header-location-notification {
+    padding: 10px 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #fff; }
+  .app-header-menu-container .app-header-right-menu-container {
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center; }
+  .app-header-menu-container .app-header-menu {
+    cursor: pointer;
+    margin: 0;
+    -webkit-animation: menuAnimation 0.7s 1;
+    -webkit-animation-direction: alternate;
+    animation: menuAnimation 0.7s 1;
+    animation-direction: alternate;
+    padding: 0 10px;
+    transition: all 0.8s;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ff9937; }
+    .app-header-menu-container .app-header-menu.light-color {
+      color: #fff; }
+    .app-header-menu-container .app-header-menu:hover {
+      color: #ee2e24; }
+
+.app-header-logo-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end; }
+  .app-header-logo-container .label {
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ff9937;
+    line-height: 0;
+    padding: 0 0 35px 20px; }
+    .app-header-logo-container .label::first-letter {
+      font-size: 120px; }
+    .app-header-logo-container .label.light-color {
+      color: #fff; }
+
+@-webkit-keyframes menuAnimation {
+  0% {
+    margin: 0  -20px 0 0; }
+  100% {
+    margin: 0; } }

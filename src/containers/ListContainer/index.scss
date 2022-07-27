@@ -1,0 +1,24 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.list-container {
+  .form-fields-container {
+    box-shadow: none;
+    border: none;
+    .form-fields {
+      width: 100%;
+    }
+  }
+}
+
+.edit-icon-style {
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+}
+
+.del-icon-style {
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+}

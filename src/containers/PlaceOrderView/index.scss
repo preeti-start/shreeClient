@@ -1,0 +1,14 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.add-address-popup {
+  width: 400px;
+  .form-fields-container{
+    border: none;
+    box-shadow: none;
+    .form-fields {
+      width: 100%;
+    }
+  }
+
+}

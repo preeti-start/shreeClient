@@ -1,0 +1,66 @@
+@import '../../../scss/variables';
+@import '../../../scss/utilities';
+
+.os-checkbox {
+  position: relative;
+  display: flex;
+  .mark {
+    position: absolute;
+    background-color: $WHITE;
+    border: 1px solid $BLACK_SHADE_10;
+    cursor: pointer;
+    height: 20px;
+    width: 20px; 
+    margin-right: 16px;
+    &:after {
+      border: 2px solid $WHITE;
+      border-top: none;
+      border-right: none;
+      content: "";
+      height: 6px;
+      left: 4px;
+      position: absolute;
+      top: 5px;
+      transform: rotate(-45deg);
+      width: 10px;
+    }
+  }
+  .label {
+    margin-left: 16px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+  }
+
+  input[type="checkbox"] {
+    visibility: hidden;
+      &:checked{
+        & + .mark {
+          background-color: $PRIMARY;
+          border-color: $PRIMARY;
+            &:after{
+              opacity: 1;
+            }
+        }
+      }
+  }
+
+  &.round{
+    .mark{
+      border-radius: 50%;
+    }
+  }
+  &.square {
+    .mark {
+      border-radius: 4px;
+    }
+  }
+  &.partially-checked {
+    .mark {
+      &:after {
+        transform: rotate(0deg);
+        height: 0px;
+        top: 8px;
+      }
+    }
+  }
+}

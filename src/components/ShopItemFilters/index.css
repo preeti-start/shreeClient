@@ -1,0 +1,54 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.shop-filters-header {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8); }
+  .shop-filters-header.margin_top {
+    margin: 10px 0 0 0; }
+
+.filter-left-section {
+  padding: 0 0 0 30px;
+  width: 250px;
+  min-width: 250px; }
+  .filter-left-section .checkbox-container .checkbox-label {
+    font-size: 14px; }
+
+.shop-list-sort-option {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  margin: 10px 10px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.6); }
+  .shop-list-sort-option .shop-list-filter-title {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.6); }
+  .shop-list-sort-option .shop-list-search-icon {
+    width: 27px;
+    opacity: 0.5;
+    height: 27px;
+    position: absolute;
+    z-index: 1000;
+    left: 170px;
+    top: 50%; }
+  .shop-list-sort-option.sort-active {
+    color: #ee2e24; }

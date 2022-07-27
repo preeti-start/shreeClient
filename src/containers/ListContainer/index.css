@@ -1,0 +1,19 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.list-container .form-fields-container {
+  box-shadow: none;
+  border: none; }
+  .list-container .form-fields-container .form-fields {
+    width: 100%; }
+
+.edit-icon-style {
+  cursor: pointer;
+  height: 22px;
+  width: 22px; }
+
+.del-icon-style {
+  cursor: pointer;
+  height: 22px;
+  width: 22px; }

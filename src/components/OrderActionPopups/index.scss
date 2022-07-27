@@ -1,0 +1,30 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.order-status-popup-bg {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $BLACK_SHADE_40;
+  .order-status-popup-body {
+    @include fontStyle($BLACK_SHADE_80, $size_20, bold);
+    .order-status-popup-img {
+      width: 100px;
+      height: 100px;
+      margin: 20px 0;
+    }
+    background-color: $WHITE;
+    border-radius: 4px;
+    padding: 20px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

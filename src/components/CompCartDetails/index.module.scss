@@ -1,0 +1,29 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.container {
+  padding: 50px;
+  display: flex;
+
+  .left-section {
+    flex: 2;
+    .title {
+      @include fontStyle($BLACK_SHADE_80, $size_25, bold);
+    }
+    .data-container {
+      margin: 10px;
+      @include fontStyle($BLACK_SHADE_80, $size_14, bold);
+
+      .data-img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .right-section {
+    flex: 1;
+  }
+
+}

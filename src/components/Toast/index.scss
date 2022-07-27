@@ -1,0 +1,81 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.toast-popup-section {
+  z-index: 1010;
+  transform: scale(0.5);
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  display: flex;
+  transition: all ease-in 300ms;
+  justify-content: center;
+
+  &.toast-popup-section-active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  &.toast-popup-section-inactive {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  .toast-popup-container {
+    // width: 553px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02);
+    border: solid 1px rgba(0, 0, 0, 0.06);
+    background-color: $BLACK_SHADE_80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .toast-popup-icon-container {
+      margin-right: 10px;
+      width: 30px;
+      margin-left: 15px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $GREEN;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .toast-popup-icon {
+        width: 15px;
+        height: 12px;
+      }
+      .toast-popup-error-icon {
+        width: 12px;
+        height: 12px;
+        stroke: $WHITE;
+        fill: $WHITE;
+      }
+      .toast-popup-info-icon {
+        width: 18px;
+        height: 18px;
+      }
+      &.toast-popup-error-icon-container {
+        background-color: $RED;
+        //width: 40px;
+      }
+      &.toast-popup-warning-icon-container {
+        background-color: $YELLOW;
+        //width: 40px;
+      }
+      &.toast-popup-info-icon-container {
+        background-color: $BLUE;
+        //width: 40px;
+      }
+
+    }
+    .toast-popup-content {
+      @include fontStyle($WHITE, $size_16, normal);
+    }
+
+  }
+
+}

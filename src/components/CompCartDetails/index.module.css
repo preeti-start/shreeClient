@@ -1,0 +1,32 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.container {
+  padding: 50px;
+  display: flex; }
+  .container .left-section {
+    flex: 2; }
+    .container .left-section .title {
+      font-size: 25px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: rgba(0, 0, 0, 0.8); }
+    .container .left-section .data-container {
+      margin: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: rgba(0, 0, 0, 0.8); }
+      .container .left-section .data-container .data-img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 10px; }
+  .container .right-section {
+    flex: 1; }

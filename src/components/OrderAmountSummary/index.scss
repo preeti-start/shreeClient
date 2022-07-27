@@ -1,0 +1,38 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.order-amount-details {
+  .order-amount-change-msg {
+    padding: 0 0 10px 0;
+    @include fontStyle($RED, $size_14, normal);
+  }
+  .order-amount-seperator {
+    margin: 10px 0;
+    width: 100%;
+    height: 1px;
+    background-color: $BLACK_SHADE_20;
+  }
+  @include fontStyle($BLACK_SHADE_80, $size_22, bold);
+  padding: 20px;
+  background-color: $WHITE;
+  box-shadow: 0 4px 8px 0 $BLACK_SHADE_10;
+  border: solid 1px $BLACK_SHADE_10;
+  .button-container {
+    margin: 0;
+    .button {
+      border-radius: 4px;
+    }
+  }
+}
+
+.order-amount-row {
+  display: flex;
+  margin: 0 0 20px 0;
+  @include fontStyle($BLACK_SHADE_80, $size_16, bold);
+
+  .order-amount-title {
+    flex: 1;
+    font-weight: normal;
+    color: $BLACK_SHADE_60;
+  }
+}

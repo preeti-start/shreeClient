@@ -1,0 +1,21 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px; }
+  .checkbox-container .checkbox {
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px; }
+  .checkbox-container .checkbox-label {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.6); }

@@ -1,0 +1,31 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.add-item-quantity-body {
+  display: flex;
+  @include fontStyle($BLACK_SHADE_80, $size_16, normal);
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 40px;
+  //box-shadow: 0 8px 8px 0 $BLACK_SHADE_10;
+
+  .quantity-button-container {
+    padding: 15px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $PRIMARY;
+    @include fontStyle($WHITE, $size_20, bold);
+
+    &.left-button {
+      margin: 0 20px 0 0;
+    }
+    &.right-button {
+      margin: 0 0 0 20px;
+    }
+  }
+}

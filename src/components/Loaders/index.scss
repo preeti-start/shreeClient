@@ -1,0 +1,59 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+
+.circularLoader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid $PRIMARY;
+  width: 35px;
+  height: 35px;
+  animation: spin 1s linear infinite;
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+
+.loader-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  height: 4px;
+
+  .bar {
+    position: absolute;
+    background: $RED;
+    opacity: 0.37;
+    transition: transform 0.2s linear;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    &.bar1 {
+      animation: progressLinearMovement 1.5s infinite;
+      animation-delay: 0s;
+    }
+    &.bar2 {
+      left: -100%;
+      animation: progressLinearMovement 1.5s infinite;
+      animation-delay: 0.7s;
+    }
+  }
+}
+
+@keyframes progressLinearMovement {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.fab-icon-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .fab-icon-container .fab-icon-box {
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+    background-color: #ee2e24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; }

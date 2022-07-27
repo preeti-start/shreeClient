@@ -1,0 +1,137 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+header {
+  display: flex;
+  padding: $home_header_padding;
+}
+
+.app-header-cart-container {
+  position: relative;
+}
+
+.app-header-cart-count {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: $RED;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 50%;
+  @include fontStyle($WHITE, $size_14, bold);
+}
+
+.app-header-icons {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s;
+  &.light-color {
+    fill: $WHITE;
+  }
+  &:hover {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.logout-icon {
+  transform: rotate(180deg);
+}
+
+.app-header-horizontal-seperator {
+  width: 1px;
+  height: 30px;
+  background-color: $BLACK_SHADE_20;
+  margin: 0 15px;
+}
+
+.app-header-profile-img-icon {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.app-header-menu-container {
+  .button-container {
+    margin: 0 30px 10px 0;
+  }
+  .app-header-location-notification {
+    padding: 10px 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    border-radius: 5px;
+    background-color: $BLACK_SHADE_80;
+    @include fontStyle($WHITE, $size_14, bold);
+  }
+  height: $home_header_height;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  .app-header-right-menu-container {
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .app-header-menu {
+    cursor: pointer;
+    margin: 0;
+    -webkit-animation: menuAnimation 0.7s 1;
+    -webkit-animation-direction: alternate;
+    animation: menuAnimation 0.7s 1;
+    animation-direction: alternate;
+    padding: 0 10px;
+    transition: all 0.8s;
+    @include fontStyle($PRIMARY, $size_20, bold);
+    &.light-color {
+      color: $WHITE;
+    }
+    &:hover {
+      color: $RED;
+    }
+  }
+}
+
+.app-header-logo-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  .label {
+    cursor: pointer;
+    @include fontStyle($PRIMARY, $size_50, bold);
+    line-height: 0;
+    padding: 0 0 35px 20px;
+
+    &::first-letter {
+      font-size: $size_120;
+      //margin-right: -20px;
+    }
+
+    &.light-color {
+      color: $WHITE;
+    }
+
+  }
+}
+
+@-webkit-keyframes menuAnimation {
+  0% {
+    margin: 0  -20px 0 0;
+  }
+  100% {
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,62 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.left-nav-container {
+  width: $left_nav_width;
+  position: fixed;
+  left: 0;
+  top: $home_header_height+20;
+  padding: 30px 0 0 0;
+  bottom: 0;
+  background-color: $WHITE;
+  z-index: 999;
+  overflow: auto;
+}
+
+.left-nav-each-menu {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: $BLACK_SHADE_80;
+
+  &:hover {
+    background-color: $LIGHT_GREY;
+  }
+
+  &.active {
+    color: $RED
+  }
+}
+
+.left-nav-icon-holder {
+  margin: 0 5px 0 12px;
+  .icon-active {
+    fill: $RED;
+  }
+}
+
+.left-nav-menu {
+  padding: 15px 20px;
+  font-size: $size_16;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &.active {
+    fill: $RED
+  }
+
+}
+
+.left-nav-profile-icon {
+  fill: $BLACK_SHADE_80;
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+}

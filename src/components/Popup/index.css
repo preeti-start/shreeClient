@@ -1,0 +1,117 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.animation-1-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1006;
+  transition: all 200ms ease-in;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; }
+  .animation-1-bg.animation-1-bg-active {
+    opacity: 1; }
+  .animation-1-bg .animation-1-container {
+    transform: scale(1.15);
+    opacity: 0.2;
+    transition: all 300ms ease-in; }
+    .animation-1-bg .animation-1-container.animation-1-container-active {
+      transform: scale(1);
+      opacity: 1; }
+    .animation-1-bg .animation-1-container.animation-1-container-inactive {
+      transform: scale(0.7);
+      opacity: 0; }
+
+.animated_popup_bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1006;
+  transition: all 500ms ease-in;
+  pointer-events: none; }
+  .animated_popup_bg.animated_popup_active_bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: auto; }
+
+.animated_popup_div {
+  opacity: 1;
+  transition: all 500ms ease-in;
+  z-index: 100;
+  position: absolute;
+  padding: 16px 24px 20px;
+  pointer-events: none; }
+  .animated_popup_div.animated_popup_div_active {
+    opacity: 1;
+    pointer-events: auto; }
+  .animated_popup_div .animated-dialog-container {
+    display: flex;
+    overflow: hidden; }
+    .animated_popup_div .animated-dialog-container .animated-dialog-content {
+      opacity: 0;
+      flex: 1;
+      border-radius: 8px;
+      background-color: #fff;
+      visibility: hidden;
+      transition: all 500ms ease-in; }
+      .animated_popup_div .animated-dialog-container .animated-dialog-content.animated-dialog-content-active {
+        opacity: 1;
+        visibility: visible; }
+
+.animated-dilog-title {
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff;
+  display: flex;
+  color: white;
+  transition: all 500ms ease-in; }
+  .animated-dilog-title .animated-dilog-title-right-action {
+    flex: 1;
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end; }
+
+.animated-dilog-body {
+  display: flex;
+  transition: all 500ms ease-in;
+  max-height: 90vh; }
+  .animated-dilog-body .animated-dilog-main-div {
+    padding: 20px;
+    transition: all 500ms ease-in, min-width 500ms ease-in, min-height 2000ms ease-in;
+    flex: 1;
+    border-radius: 8px;
+    text-transform: capitalize;
+    background-color: #fff;
+    overflow: auto; }
+    .animated-dilog-body .animated-dilog-main-div .animated-dilog-footer {
+      display: flex;
+      justify-content: flex-end; }
+    .animated-dilog-body .animated-dilog-main-div .animated-dilog-seperator {
+      width: 100%;
+      margin: 20px 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      height: 1px; }
+  .animated-dilog-body .animated-dilog-close-action {
+    display: initial;
+    padding-left: 16px; }
+    .animated-dilog-body .animated-dilog-close-action .animated-dialog-close_action_box {
+      color: #fff;
+      cursor: pointer; }
+      .animated-dilog-body .animated-dilog-close-action .animated-dialog-close_action_box .animated-dialog-close_icon {
+        width: 24px;
+        stroke: #fff;
+        fill: #fff;
+        height: 24px; }

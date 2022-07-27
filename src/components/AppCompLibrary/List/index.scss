@@ -1,0 +1,15 @@
+@import '../../../scss/utilities';
+@import '../../../scss/variables';
+
+.list-container {
+
+  .list-row {
+    display: flex;
+    .list-col {
+      flex: 1;
+    }
+    .list-col-title {
+      font-weight: bold;
+    }
+  }
+}

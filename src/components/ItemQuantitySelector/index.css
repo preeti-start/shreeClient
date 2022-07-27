@@ -1,0 +1,37 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.add-item-quantity-body {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 40px; }
+  .add-item-quantity-body .quantity-button-container {
+    padding: 15px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9937;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #fff; }
+    .add-item-quantity-body .quantity-button-container.left-button {
+      margin: 0 20px 0 0; }
+    .add-item-quantity-body .quantity-button-container.right-button {
+      margin: 0 0 0 20px; }

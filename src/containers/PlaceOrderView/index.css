@@ -1,0 +1,11 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.add-address-popup {
+  width: 400px; }
+  .add-address-popup .form-fields-container {
+    border: none;
+    box-shadow: none; }
+    .add-address-popup .form-fields-container .form-fields {
+      width: 100%; }

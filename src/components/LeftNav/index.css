@@ -1,0 +1,50 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.left-nav-container {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 140px;
+  padding: 30px 0 0 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  overflow: auto; }
+
+.left-nav-each-menu {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8); }
+  .left-nav-each-menu:hover {
+    background-color: #e6e6e6; }
+  .left-nav-each-menu.active {
+    color: #ee2e24; }
+
+.left-nav-icon-holder {
+  margin: 0 5px 0 12px; }
+  .left-nav-icon-holder .icon-active {
+    fill: #ee2e24; }
+
+.left-nav-menu {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  -ms-flex-align: center;
+  align-items: center; }
+  .left-nav-menu.active {
+    fill: #ee2e24; }
+
+.left-nav-profile-icon {
+  fill: rgba(0, 0, 0, 0.8);
+  width: 25px;
+  height: 25px;
+  opacity: 0.7; }

@@ -1,0 +1,18 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.no-result-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 40px 0;
+  @include fontStyle($BLACK_SHADE_60, $size_22, bold);
+  .no-result-found-image {
+    margin: 40px 0;
+    opacity: 0.7;
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,72 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.shop-list-body {
+  flex: 1;
+  display: flex; }
+
+.shop-list-loader-container {
+  display: flex;
+  justify-content: center; }
+
+.category-container {
+  display: flex;
+  padding: 0 0 0 20px; }
+  .category-container .shop-list-category {
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.4); }
+    .category-container .shop-list-category.active {
+      color: orange; }
+    .category-container .shop-list-category:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+
+.shop-list-dashboard {
+  flex: 1; }
+  .shop-list-dashboard .shop-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; }
+  .shop-list-dashboard .shop-list-shop-details-container {
+    margin: 20px;
+    cursor: pointer;
+    width: 20%;
+    padding: 10px 20px; }
+    .shop-list-dashboard .shop-list-shop-details-container .shop-list-sub-details {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: rgba(0, 0, 0, 0.4); }
+    .shop-list-dashboard .shop-list-shop-details-container .shop-img-container {
+      width: 150px;
+      height: 120px;
+      display: flex;
+      align-items: center; }
+      .shop-list-dashboard .shop-list-shop-details-container .shop-img-container .shop-list-shop-img {
+        width: 100%;
+        height: 100%; }
+    .shop-list-dashboard .shop-list-shop-details-container .shop-list-shop-icon {
+      width: 80px;
+      height: 80px;
+      opacity: 0.1; }
+    .shop-list-dashboard .shop-list-shop-details-container .shop-list-shop-name {
+      font-size: 20px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: rgba(0, 0, 0, 0.8); }
+      .shop-list-dashboard .shop-list-shop-details-container .shop-list-shop-name.placeholder {
+        opacity: 0.5; }

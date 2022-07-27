@@ -1,0 +1,19 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.vendors-list-container {
+  height: 100%; }
+  .vendors-list-container .recommended_checkbox .checkbox-body {
+    border: none; }
+  .vendors-list-container .form-fields-container {
+    box-shadow: none;
+    width: 300px;
+    border: none; }
+    .vendors-list-container .form-fields-container .form-fields {
+      width: 100%; }
+
+.vendors-list-img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px 0 0; }

@@ -1,0 +1,55 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.about-us-container {
+  padding: 40px 0 0 0;
+  .about-us-container-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $BLACK_SHADE_40;
+  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/bg_1.jpg');
+  background-size: cover;
+}
+
+.about-us-description {
+  position: relative;
+  flex: 1;
+  margin: 40px;
+  width: 60vw;
+  @include fontStyle($WHITE, $size_20, bold)
+}
+
+.about-us-leadership {
+  .about-us-leadership-title {
+    padding: 2px 0;
+    @include fontStyle($BLACK_SHADE_80, $size_18, bold);
+  }
+  .about-us-leadership-sub-title {
+    @include fontStyle($BLACK_SHADE_80, $size_16, normal);
+  }
+
+  position: relative;
+  margin: 40px;
+  margin-top: -200px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: $WHITE_SHADE_80;
+  .about-us-leadership-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-us-leadership-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  margin-left: 10px;
+  /* Rounded sliders */ }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.1), 1px -1px 1px -1px rgba(0, 0, 0, 0.1), -1px 1px 1px -1px rgba(0, 0, 0, 0.1), -1px -1px 1px -1px rgba(0, 0, 0, 0.1); }
+  .switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .switch .slider.round {
+    border-radius: 22px; }
+  .switch .slider.round:before {
+    border-radius: 50%; }
+
+input:checked + .slider {
+  background-color: white; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px silver; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #ff9937;
+  left: -4px; }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.labelText {
+  font-size: 14px;
+  color: #000; }

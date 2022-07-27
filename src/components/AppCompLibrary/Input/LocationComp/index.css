@@ -1,0 +1,22 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.geosuggest {
+  z-index: 1000;
+  position: relative; }
+  .geosuggest input:focus {
+    outline: none; }
+
+.geosuggest__input-wrapper {
+  height: 30px; }
+
+.geosuggest__suggests-wrapper {
+  position: absolute;
+  top: 30px;
+  background-color: #fff; }
+
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0; }

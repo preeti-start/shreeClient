@@ -1,0 +1,71 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.login-desc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 500px;
+  color: white;
+  font-weight: bold;
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background: $BG_COLOR_DIM;
+  display: flex;
+  flex-direction: column;
+
+  .login-body {
+    flex: 1;
+    padding-bottom: 50px;
+    display: flex;
+
+    .login-left-section {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .login-left-desc-section {
+        background-image: url("/bg_4.jpg");
+        background-size: cover;
+        width: 450px;
+        height: 500px;
+      }
+    }
+    .login-right-section {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .login-right-form-section {
+        .form-fields-container {
+          box-shadow: none;
+          border: none;
+          padding: 0;
+          flex-direction: column;
+          .form-fields {
+            width: 320px;
+          }
+        }
+        .button-container {
+          margin: 20px 0 0 0;
+          .button {
+            border-radius: 4px;
+          }
+
+        }
+        width: 70%;
+        background: $WHITE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+      }
+    }
+  }
+}

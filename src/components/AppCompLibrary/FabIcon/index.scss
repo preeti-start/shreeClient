@@ -1,0 +1,22 @@
+@import '../../../scss/utilities';
+@import '../../../scss/variables';
+
+.fab-icon-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .fab-icon-box {
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+    background-color: $RED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $WHITE;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.vendors-list-container {
+  height: 100%;
+
+  .recommended_checkbox {
+    .checkbox-body {
+      border: none;
+    }
+  }
+  .form-fields-container {
+    box-shadow: none;
+    width: 300px;
+    border: none;
+    .form-fields {
+      width: 100%;
+    }
+  }
+}
+
+.vendors-list-img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px 0 0;
+}

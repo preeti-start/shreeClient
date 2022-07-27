@@ -1,0 +1,74 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.order-stage-seperator {
+  opacity: 0.5;
+  margin: 15px 0 0 0;
+  width: 200px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block; }
+
+.order-stage-text {
+  margin: 7px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8); }
+
+.order-stage-container {
+  display: flex;
+  margin: 20px 0 40px 0;
+  justify-content: center; }
+  .order-stage-container .order-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.address-row {
+  margin: 0 0 20px 0; }
+
+.add-new-address-button {
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ff9937; }
+
+.order-stage-circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 6px #e6e6e6; }
+  .order-stage-circle.active {
+    background-color: orange; }
+
+.place-order-view-order-header-subdata-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ff9937; }
+
+.place-order-view-container {
+  display: flex; }
+  .place-order-view-container .place-order-view-address-select-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    margin: 0 20px 0 0;
+    background-color: #fff;
+    padding: 20px; }
+  .place-order-view-container .place-order-view-amount-details-container {
+    flex: 1; }

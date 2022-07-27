@@ -1,0 +1,37 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.blocking-container {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  background-color: $BLACK_SHADE_10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include fontStyle($RED, $size_22, bold);
+
+}
+.remove-item-button {
+
+  .remove-icon {
+    width: 12px;
+    height: 12px;
+    stroke: $WHITE;
+    fill: $WHITE;
+  }
+
+  border-radius: 50%;
+  width: 30px;
+  cursor: pointer;
+  right: -15px;
+  top: -15px;
+  position: absolute;
+  height: 30px;
+  background-color: $RED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

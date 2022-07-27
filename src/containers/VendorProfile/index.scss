@@ -1,0 +1,14 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.vendor-profile-container {
+  .form-container {
+    .form-fields-container {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .vendor-profile-seperator {
+    padding: 20px 0 0 0;
+  }
+}

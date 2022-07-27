@@ -1,0 +1,144 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.option-selector-main-container {
+  position: relative;
+  width: 100%;
+  & .option-selector-input-subcontainer {
+    //padding: 3px 0 4px 16px;
+    flex: 1;
+    user-select: none;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    //border: 1px solid $BLACK_SHADE_10;
+    height: 50px;
+    cursor: pointer;
+
+    &.selector-expanded {
+      //border: 1px solid rgba(0,0,0,0.4);
+    }
+
+    & .non-searchable-input-value {
+      width: 80%;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(0,0,0,.8);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+
+    &.option-selector-input-subcontainer-error-case {
+      border-color: $RED;
+      box-shadow: 0 2px 4px 0 rgba(255, 129, 129, 0.3);
+    }
+
+    & .option-selector-drop-down {
+      position: absolute;
+      cursor: pointer;
+      right: 16px;
+      top: 20px;
+      width: 14px;
+      height: 9px;
+      stroke: $BLACK_SHADE_80;
+      align-self: flex-start;
+      fill: none;
+      pointer-events: none;
+
+      &.option-selector-error {
+        stroke: $RED;
+      }
+      &.option-selector-close {
+        transform: rotate(180deg);
+      }
+    }
+
+    & .option-selector-disabled {
+      opacity: 0.5;
+    }
+
+    input {
+      border: 0;
+      outline: none;
+      border-bottom: 0 solid #ccc;
+      border-radius: 0;
+      padding: 0;
+      width: 80%;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $BLACK_SHADE_80;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    & .option-selector-input-focused {
+      margin-top: 10px;
+      font-family: Brown;
+    }
+  }
+
+  .option-selector-input-label {
+    transition: all 0.2s;
+    touch-action: manipulation;
+    position: absolute;
+    top: 0;
+    transform: translateY(15px);
+    pointer-events: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $BLACK_SHADE_80;
+    letter-spacing: normal;
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &.input-label-error-case {
+      color: $RED
+    }
+  }
+
+  .option-selector-label-focused {
+    transform: translate(0px, 4px);
+  }
+
+  .options-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 2px;
+    background: white;
+    z-index: 220;
+    max-height: 200px;
+    overflow: auto;
+    box-shadow: 0 5px 10px 0 $BLACK_SHADE_80;
+    border-radius: 2px 2px 4px 4px;
+    border: 0.5px solid rgba(0,0,0, 0.08);
+   @include scrollBar(4px);
+    & .options-selector-option {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      
+      &.selected{
+        background: rgba(0,0,0,.03);
+        color: rgba(0,0,0,.95)
+      }
+    }
+
+    .select-option-no-element {
+      padding: 8px 16px;
+    }
+
+    & .options-selector-option:hover {
+      background-color: $WHITE_SHADE_20;
+      cursor: pointer;
+    }
+  }
+}

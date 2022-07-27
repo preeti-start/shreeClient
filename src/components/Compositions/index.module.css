@@ -1,0 +1,28 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.container {
+  padding: 50px;
+  display: flex; }
+  .container .composition {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.8); }
+    .container .composition .image {
+      width: 50px;
+      height: 70px;
+      margin: 0 0 20px 0; }
+    .container .composition:hover {
+      background-color: rgba(0, 0, 0, 0.1); }

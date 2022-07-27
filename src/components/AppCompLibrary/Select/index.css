@@ -1,0 +1,118 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.option-selector-main-container {
+  position: relative;
+  width: 100%; }
+  .option-selector-main-container .option-selector-input-subcontainer {
+    flex: 1;
+    user-select: none;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    height: 50px;
+    cursor: pointer; }
+    .option-selector-main-container .option-selector-input-subcontainer .non-searchable-input-value {
+      width: 80%;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.8);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 16px; }
+    .option-selector-main-container .option-selector-input-subcontainer.option-selector-input-subcontainer-error-case {
+      border-color: #ee2e24;
+      box-shadow: 0 2px 4px 0 rgba(255, 129, 129, 0.3); }
+    .option-selector-main-container .option-selector-input-subcontainer .option-selector-drop-down {
+      position: absolute;
+      cursor: pointer;
+      right: 16px;
+      top: 20px;
+      width: 14px;
+      height: 9px;
+      stroke: rgba(0, 0, 0, 0.8);
+      align-self: flex-start;
+      fill: none;
+      pointer-events: none; }
+      .option-selector-main-container .option-selector-input-subcontainer .option-selector-drop-down.option-selector-error {
+        stroke: #ee2e24; }
+      .option-selector-main-container .option-selector-input-subcontainer .option-selector-drop-down.option-selector-close {
+        transform: rotate(180deg); }
+    .option-selector-main-container .option-selector-input-subcontainer .option-selector-disabled {
+      opacity: 0.5; }
+    .option-selector-main-container .option-selector-input-subcontainer input {
+      border: 0;
+      outline: none;
+      border-bottom: 0 solid #ccc;
+      border-radius: 0;
+      padding: 0;
+      width: 80%;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.8);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .option-selector-main-container .option-selector-input-subcontainer .option-selector-input-focused {
+      margin-top: 10px;
+      font-family: Brown; }
+  .option-selector-main-container .option-selector-input-label {
+    transition: all 0.2s;
+    touch-action: manipulation;
+    position: absolute;
+    top: 0;
+    transform: translateY(15px);
+    pointer-events: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: normal;
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .option-selector-main-container .option-selector-input-label.input-label-error-case {
+      color: #ee2e24; }
+  .option-selector-main-container .option-selector-label-focused {
+    transform: translate(0px, 4px); }
+  .option-selector-main-container .options-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 2px;
+    background: white;
+    z-index: 220;
+    max-height: 200px;
+    overflow: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 2px 2px 4px 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.08); }
+    .option-selector-main-container .options-container::-webkit-scrollbar {
+      display: none; }
+    .option-selector-main-container .options-container:hover::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      border-radius: 3px;
+      display: block; }
+    .option-selector-main-container .options-container:hover::-webkit-scrollbar-track {
+      border-radius: 10px; }
+    .option-selector-main-container .options-container:hover::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px; }
+    .option-selector-main-container .options-container .options-selector-option {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px; }
+      .option-selector-main-container .options-container .options-selector-option.selected {
+        background: rgba(0, 0, 0, 0.03);
+        color: rgba(0, 0, 0, 0.95); }
+    .option-selector-main-container .options-container .select-option-no-element {
+      padding: 8px 16px; }
+    .option-selector-main-container .options-container .options-selector-option:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      cursor: pointer; }

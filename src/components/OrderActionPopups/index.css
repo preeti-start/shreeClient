@@ -1,0 +1,34 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.order-status-popup-bg {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .order-status-popup-bg .order-status-popup-body {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .order-status-popup-bg .order-status-popup-body .order-status-popup-img {
+      width: 100px;
+      height: 100px;
+      margin: 20px 0; }

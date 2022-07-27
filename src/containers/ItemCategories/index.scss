@@ -1,0 +1,14 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+
+.item-categories-container {
+
+  .form-fields-container {
+    box-shadow: none;
+    border: none;
+    .form-fields {
+      width: 100%;
+    }
+  }
+}

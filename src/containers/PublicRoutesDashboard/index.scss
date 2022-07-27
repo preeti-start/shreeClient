@@ -1,0 +1,9 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.public-dashboard-container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}

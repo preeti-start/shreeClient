@@ -1,0 +1,45 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.os-checkbox {
+  position: relative;
+  display: flex; }
+  .os-checkbox .mark {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-right: 16px; }
+    .os-checkbox .mark:after {
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      content: "";
+      height: 6px;
+      left: 4px;
+      position: absolute;
+      top: 5px;
+      transform: rotate(-45deg);
+      width: 10px; }
+  .os-checkbox .label {
+    margin-left: 16px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7); }
+  .os-checkbox input[type="checkbox"] {
+    visibility: hidden; }
+    .os-checkbox input[type="checkbox"]:checked + .mark {
+      background-color: #ff9937;
+      border-color: #ff9937; }
+      .os-checkbox input[type="checkbox"]:checked + .mark:after {
+        opacity: 1; }
+  .os-checkbox.round .mark {
+    border-radius: 50%; }
+  .os-checkbox.square .mark {
+    border-radius: 4px; }
+  .os-checkbox.partially-checked .mark:after {
+    transform: rotate(0deg);
+    height: 0px;
+    top: 8px; }

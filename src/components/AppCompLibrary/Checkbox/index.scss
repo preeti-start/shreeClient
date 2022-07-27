@@ -1,0 +1,21 @@
+@import "../../../scss/utilities";
+@import "../../../scss/variables";
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  .checkbox {
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+
+  }
+  .checkbox-label {
+    @include fontStyle($BLACK_SHADE_60, $size_16, normal)
+  }
+}
+

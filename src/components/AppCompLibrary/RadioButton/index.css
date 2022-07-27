@@ -1,0 +1,35 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.radio-button-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8); }
+  .radio-button-row .radio-button-option {
+    border: solid 1px #a6a6a6;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 10px 0 0; }
+    .radio-button-row .radio-button-option .radio-button-inner-option {
+      height: calc(22px / 1.5);
+      width: calc(22px / 1.5);
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: inline-block; }
+      .radio-button-row .radio-button-option .radio-button-inner-option.active {
+        background-color: orange; }
+    .radio-button-row .radio-button-option.active {
+      border-color: orange; }

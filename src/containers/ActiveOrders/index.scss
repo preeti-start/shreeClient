@@ -1,0 +1,16 @@
+@import "../../scss/utilities";
+@import "../../scss/variables";
+
+.active-orders-list-actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.active-orders-list-container {
+  height: 100%;
+}
+
+.active-orders-filter-container {
+  display: flex;
+}

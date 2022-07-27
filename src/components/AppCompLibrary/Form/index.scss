@@ -1,0 +1,36 @@
+@import '../../../scss/utilities';
+@import '../../../scss/variables';
+
+.form-container {
+  .form-container-header {
+    padding: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    .form-container-header-title {
+      flex: 1;
+      @include fontStyle($BLACK_SHADE_80, $size_25, bold)
+    }
+  }
+  .form-actions-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-fields-container {
+    .form-fields-title {
+      @include fontStyle($PRIMARY, $size_25, bold);
+      padding: 5px 0;
+    }
+    .form-fields {
+      margin: 0 0 20px 0;
+      width: 45%;
+    }
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 $BLACK_SHADE_10;
+    border: solid 1px $BLACK_SHADE_10;
+    background-color: $WHITE;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

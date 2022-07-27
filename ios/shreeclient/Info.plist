@@ -49,7 +49,20 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-  <key>UIStatusBarStyle</key>
-  <string>UIStatusBarStyleDefault</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IndieFlower.ttf</string>
+		<string>Merienda-Bold.ttf</string>
+		<string>Merienda-Regular.ttf</string>
+		<string>MeriendaOne-Regular.ttf</string>
+		<string>MetalMania-Regular.ttf</string>
+		<string>Niconne-Regular.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>PlayfairDisplay-Bold.ttf</string>
+		<string>PlayfairDisplay-Regular.ttf</string>
+		<string>Stylish-Regular.ttf</string>
+	</array>
 </dict>
 </plist>

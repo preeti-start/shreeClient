@@ -1,0 +1,105 @@
+@import '../../../scss/utilities';
+@import '../../../scss/variables';
+
+$img_length: 110px;
+$del_icon_length: 25px;
+
+.file-upload-placeholder {
+  .file-upload-file-icon {
+    width: 36px;
+    fill: $BLACK_SHADE_60;
+    height: 44px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border: dashed 2px $BLACK_SHADE_40;
+  width: $img_length;
+  height: $img_length;
+}
+
+.img-upload-placeholder {
+  .file-upload-img-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+  }
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: $img_length;
+  height: $img_length;
+  background-color: $BLACK_SHADE_10;
+  @include fontStyle($BLACK_SHADE_60, $size_16, bold)
+}
+
+.file-upload-items-left-info {
+  @include fontStyle($BLACK_SHADE_60, $size_14, bold)
+}
+
+.file-upload-error-text {
+  margin: 2px 0 0 0;
+  @include fontStyle($RED, $size_14, bold)
+}
+
+.file-upload-body {
+
+  .file-upload-container {
+    display: flex;
+
+    .file-upload-filename {
+      width: 100%;
+      flex: 1;
+      @include fontStyle($BLACK_SHADE_60, $size_14, bold)
+    }
+
+    .file-icon {
+      width: 60px;
+      height: 81px;
+      stroke: $BLACK_SHADE_40;
+      fill: $BLACK_SHADE_20;
+    }
+
+    .file-upload-img-container {
+      position: relative;
+      margin: 0 10px 0 0;
+
+      .file-upload-img {
+        width: $img_length;
+        height: $img_length;
+      }
+
+      .file-upload-img-del {
+        .file-upload-close_icon {
+          width: 10px;
+          stroke: $WHITE;
+          fill: $WHITE;
+          height: 10px;
+        }
+        background-color: $BLACK_SHADE_80;
+        cursor: pointer;
+        color: $WHITE;
+        display: flex;
+        width: $del_icon_length;
+        height: $del_icon_length;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc((#{$img_length} - #{$del_icon_length}) / 2);
+        right: calc((#{$img_length} - #{$del_icon_length}) / 2);
+        @include fontStyle($WHITE, $size_14, bold);
+        transition: all 0.5s;
+        &:hover {
+          width: calc(#{$del_icon_length} + 3px);
+          height: calc(#{$del_icon_length} + 3px);
+        }
+      }
+    }
+  }
+}

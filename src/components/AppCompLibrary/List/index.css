@@ -1,0 +1,10 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.list-container .list-row {
+  display: flex; }
+  .list-container .list-row .list-col {
+    flex: 1; }
+  .list-container .list-row .list-col-title {
+    font-weight: bold; }

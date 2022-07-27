@@ -1,0 +1,61 @@
+@import "../../../scss/utilities";
+@import "../../../scss/variables";
+
+.radio-button {
+  padding: 15px 0 0 0;
+  font-size: $size_14;
+  color: $BLACK_SHADE_60
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+
+  .popup-body {
+    z-index: 1;
+    border: solid 1px $BLACK_SHADE_10;
+    background-color: $WHITE;
+    position: absolute;
+    top: $table_header_height;
+    left: 0;
+    padding: 20px;
+    border-radius: 4px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .popup-data {
+      margin-right: 20px;
+    }
+
+    .clear-container {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      @include fontStyle($RED, $size_18, bold);
+    }
+  }
+
+  .icon-container {
+    @include fontStyle($BLACK_SHADE_40, $size_16, normal);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: $WHITE;
+
+    .title {
+      margin: 0 10px 0 0;
+    }
+  }
+
+}
+
+

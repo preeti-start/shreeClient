@@ -1,0 +1,69 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+$orderStageCircleWidth: 30px;
+.order-stage-seperator {
+  opacity: 0.5;
+  margin: (#{$orderStageCircleWidth/2}) 0 0 0;
+  width: 200px;
+  height: 2px;
+  background-color: $BLACK_SHADE_60;
+  display: inline-block;
+}
+
+.order-stage-text {
+  margin: 7px 0 0 0;
+  @include fontStyle($BLACK_SHADE_80, $size_16, bold)
+}
+
+.order-stage-container {
+  display: flex;
+  margin: 20px 0 40px 0;
+  justify-content: center;
+  .order-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.address-row {
+  margin: 0 0 20px 0;
+}
+
+.add-new-address-button {
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  @include fontStyle($PRIMARY, $size_20, bold);
+}
+
+.order-stage-circle {
+  border-radius: 50%;
+  width: $orderStageCircleWidth;
+  height: $orderStageCircleWidth;
+  background-color: $BLACK_SHADE_20;
+  border: solid 6px $LIGHT_GREY;
+  &.active {
+    background-color: $ORANGE;
+  }
+}
+
+.place-order-view-order-header-subdata-text {
+  @include fontStyle($PRIMARY, $size_16, normal)
+}
+
+.place-order-view-container {
+  display: flex;
+
+  .place-order-view-address-select-container {
+    box-shadow: 0 4px 8px 0 $BLACK_SHADE_10;
+    border: solid 1px $BLACK_SHADE_10;
+    flex: 2;
+    margin: 0 20px 0 0;
+    background-color: $WHITE;
+    padding: 20px;
+  }
+  .place-order-view-amount-details-container {
+    flex: 1;
+  }
+}

@@ -1,0 +1,120 @@
+@import './variables';
+
+@mixin fontStyle($font-color:$BLACK,$font-size:$size_14,$font-weight:normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $font-color;
+}
+
+@mixin scrollBar($WIDTH:4px) {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      width: $WIDTH;
+      height: $WIDTH;
+      border-radius: 3px;
+      display: block;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+  }
+}
+
+@mixin loadingDotsAnimation($color:$WHITE,$animationString:'xyz',$animationStringBefore:'xyzBefore',$animationStringAfter:'xyzAfter') {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $color;
+    color: $color;
+    box-shadow: 9999px 0 0 -5px $color;
+    opacity: 0.7;
+    animation: $animationString 1.5s infinite linear;
+    animation-delay: .25s;
+  }
+
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $color;
+    opacity: 0.7;
+    color: $color;
+  }
+
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px $color;
+    opacity: 0.7;
+    animation: $animationStringBefore 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px $color;
+    opacity: 0.7;
+    animation: $animationStringAfter 1.5s infinite linear;
+    animation-delay: .5s;
+  }
+
+  @keyframes #{$animationStringBefore} {
+    0% {
+      box-shadow: 9984px 0 0 -5px $color;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px $color;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px $color;
+    }
+  }
+
+  @keyframes #{$animationString} {
+    0% {
+      box-shadow: 9999px 0 0 -5px $color;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px $color;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px $color;
+    }
+  }
+
+  @keyframes #{$animationStringAfter} {
+    0% {
+      box-shadow: 10014px 0 0 -5px $color;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px $color;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px $color;
+    }
+  }
+}

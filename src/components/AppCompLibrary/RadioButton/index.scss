@@ -1,0 +1,38 @@
+@import '../../../scss/utilities';
+@import '../../../scss/variables';
+
+$radio_button_dim: 22px;
+
+.radio-button-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @include fontStyle($BLACK_SHADE_80, $size_16, normal);
+
+  .radio-button-option {
+    border: solid 1px $DARK_GREY;
+    height: $radio_button_dim;
+    width: $radio_button_dim;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 10px 0 0;
+
+    .radio-button-inner-option {
+      height: calc(#{$radio_button_dim} / 1.5);
+      width: calc(#{$radio_button_dim} / 1.5);
+      border-radius: 50%;
+      background-color: $BLACK_SHADE_20;
+      display: inline-block;
+      &.active {
+        background-color: $ORANGE;
+      }
+    }
+
+    &.active {
+      border-color: $ORANGE;
+    }
+  }
+}

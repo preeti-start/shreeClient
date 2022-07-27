@@ -1,0 +1,39 @@
+@import '../../scss/utilities';
+@import '../../scss/variables';
+
+.cart-items-row {
+  position: relative;
+  margin: 0 0 25px 0;
+  display: flex;
+  .cart-items-details {
+    flex: 1;
+    @include fontStyle($BLACK_SHADE_80, $size_20, bold);
+  }
+  .cart-items-subdetails {
+    @include fontStyle($BLACK_SHADE_60, $size_14, normal);
+  }
+}
+.cart-details-container{
+  height:100%;
+}
+.cart-details-view-container {
+  display: flex;
+  height:100%;
+
+
+  .cart-detail-items-list-container {
+    flex: 2;
+    height:100%;
+    overflow: auto;
+    margin: 0 20px 0 0;
+    .cart-detail-items-list {
+      background-color: $WHITE;
+      box-shadow: 0 4px 8px 0 $BLACK_SHADE_10;
+      border: solid 1px $BLACK_SHADE_10;
+      padding: 20px;
+    }
+  }
+  .cart-detail-amount-summary-container {
+    flex: 1;
+  }
+}

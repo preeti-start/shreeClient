@@ -1,0 +1,28 @@
+@import "../../../../scss/utilities";
+@import "../../../../scss/variables";
+
+$input_height: 30px;
+
+.geosuggest {
+  z-index: 1000;
+  position: relative;
+  input:focus {
+    outline: none;
+  }
+}
+
+.geosuggest__input-wrapper {
+  height: $input_height;
+}
+
+.geosuggest__suggests-wrapper {
+  position: absolute;
+  top: $input_height;
+  background-color: $WHITE;
+}
+
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+}

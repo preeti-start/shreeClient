@@ -1,0 +1,9 @@
+/* Primary colours*/
+/* Font used in entire application will specify here */
+/* Primary colours*/
+/* Font used in entire application will specify here */
+.item-categories-container .form-fields-container {
+  box-shadow: none;
+  border: none; }
+  .item-categories-container .form-fields-container .form-fields {
+    width: 100%; }
